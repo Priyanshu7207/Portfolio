@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Portfolio of Priyanshu Sanjel — Software Developer & BSCS Student at King’s College" />
+  <title>Priyanshu Sanjel — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scrollbar" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#home" class="logo" aria-label="Go to home">PS</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#resume">Resume</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero" aria-label="Intro">
+    <div class="glow glow-1" aria-hidden="true"></div>
+    <div class="glow glow-2" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow reveal" data-reveal="up">Hello, I'm</p>
+        <h1 class="reveal" data-reveal="right">Priyanshu <span class="accent">Sanjel</span></h1>
+        <h2 class="subtitle reveal" data-reveal="right" data-delay="100">
+          <span id="rotator" aria-live="polite">BSCS Student @ King's College</span>
+        </h2>
+        <p class="lead reveal" data-reveal="right" data-delay="200">
+          I'm a tech enthusiast focused on C/C++, Java, and clean web design. Passionate about Data Science and Docker-based DevOps. Always exploring new technologies and building smart software.
+        </p>
+        <div class="cta reveal" data-reveal="up" data-delay="300">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Work with me</a>
+        </div>
+      </div>
+      <div class="hero-art reveal" data-reveal="left">
+        <img id="portrait" class="portrait" src="./Picture/Image%201.jpeg" 
+          alt="Priyanshu Sanjel" width="420" height="420" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat reveal" data-reveal="up">
+        <span class="num" data-target="2">0</span>
+        <span class="label">Years Learning</span>
+      </div>
+      <div class="stat reveal" data-reveal="up" data-delay="100">
+        <span class="num" data-target="6">0</span>
+        <span class="label">Projects</span>
+      </div>
+      <div class="stat reveal" data-reveal="up" data-delay="200">
+        <span class="num" data-target="5">0</span>
+        <span class="label">Tools</span>
+      </div>
+      <div class="stat reveal" data-reveal="up" data-delay="300">
+        <span class="num" data-target="2">0</span>
+        <span class="label">Certificates</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section" aria-labelledby="about-title">
+    <div class="container">
+      <h3 class="section-title reveal" data-reveal="up" id="about-title">About</h3>
+      <div class="split">
+        <p class="reveal" data-reveal="right">
+          I'm a second-year BSCS student at King's College, affiliated with Westcliff University. I specialize in programming with C/C++ and Java, and enjoy building frontend layouts with HTML & CSS. I’ve worked on a range of projects, from containerized apps using Docker to fully functional music players. I love learning new skills and applying them to real-world tech problems.
+        </p>
+        <ul class="facts reveal" data-reveal="left">
+          <li><strong>College:</strong> King's College, Kathmandu</li>
+          <li><strong>Interest:</strong> Data Science, DevOps, Modern Web Tech</li>
+          <li><strong>Values:</strong> Curiosity, Discipline, Innovation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section" aria-labelledby="skills-title">
+    <div class="container">
+      <h3 class="section-title reveal" data-reveal="up" id="skills-title">Skills</h3>
+      <div class="cards">
+        <article class="card reveal" data-reveal="up" data-tilt>
+          <h4>C / C++</h4>
+          <p>STL, memory, OOP, data structures, debugging.</p>
+          <div class="meter"><span style="width:85%"></span></div>
+        </article>
+        <article class="card reveal" data-reveal="up" data-delay="100" data-tilt>
+          <h4>Java</h4>
+          <p>OOP principles, logic building, CLI-based applications.</p>
+          <div class="meter"><span style="width:75%"></span></div>
+        </article>
+        <article class="card reveal" data-reveal="up" data-delay="200" data-tilt>
+          <h4>HTML & CSS</h4>
+          <p>Responsive layout, styling, animations, semantic HTML.</p>
+          <div class="meter"><span style="width:80%"></span></div>
+        </article>
+        <article class="card reveal" data-reveal="up" data-delay="300" data-tilt>
+          <h4>DevOps</h4>
+          <p>Docker, GitHub, Bash scripting, Linux basics.</p>
+          <div class="tags">
+            <span class="tag">Docker</span>
+            <span class="tag">Git</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Bash</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section" aria-labelledby="projects-title">
+    <div class="container">
+      <h3 class="section-title reveal" data-reveal="up" id="projects-title">Featured Projects</h3>
+      <div class="project-grid">
+        <article class="project reveal" data-reveal="up" data-tilt>
+          <div class="p-head">
+            <h4>Music Player</h4>
+            <div class="p-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </div>
+          <p>Spotify-inspired web music player with playlist UI, drag control, and keyboard navigation.</p>
+          <div class="p-actions">
+            <a class="btn btn-ghost" href="#" target="_blank">View Code</a>
+          </div>
+        </article>
+        <article class="project reveal" data-reveal="up" data-delay="100" data-tilt>
+          <div class="p-head">
+            <h4>Docker Containerization</h4>
+            <div class="p-tags"><span>DevOps</span><span>Docker</span></div>
+          </div>
+          <p>Packaged apps into containers with Dockerfiles, bash scripts, and GitHub Actions for CI/CD.</p>
+          <div class="p-actions">
+            <a class="btn btn-ghost" href="#" target="_blank">View Code</a>
+          </div>
+        </article>
+        <article class="project reveal" data-reveal="up" data-delay="200" data-tilt>
+          <div class="p-head">
+            <h4>Java Quiz Game</h4>
+            <div class="p-tags"><span>Java</span><span>CLI</span></div>
+          </div>
+          <p>Interactive terminal-based quiz game using object-oriented programming concepts in Java.</p>
+          <div class="p-actions">
+            <a class="btn btn-ghost" href="#" target="_blank">View Code</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+<!-- Resume -->
+<section id="resume" class="section" aria-labelledby="resume-title">
+  <div class="container">
+    <h3 class="section-title reveal" data-reveal="up" id="resume-title">Resume</h3>
+    <div class="resume-box reveal" data-reveal="right">
+      <p>Download my latest resume to see my skills, education, and project experience.</p>
+     <a class="btn" href="./CV/CV.pdf" download>Download Resume</a>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Contact -->
+  <section id="contact" class="section" aria-labelledby="contact-title">
+    <div class="container">
+      <h3 class="section-title reveal" data-reveal="up" id="contact-title">Contact</h3>
+      <form id="contactForm" class="contact-form reveal" data-reveal="right" novalidate>
+        <div class="form-row">
+          <label>
+            <span>Name</span>
+            <input type="text" id="name" name="name" placeholder="Your full name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </label>
+        </div>
+        <label>
+          <span>Message</span>
+          <textarea id="message" name="message" rows="5" placeholder="How can I help?" required></textarea>
+        </label>
+        <button type="submit" class="btn">Send Message</button>
+        <p class="form-response" id="formResponse" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Back to top -->
+  <a href="#top" class="to-top-fab" aria-label="Back to top">↑</a>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="brand">
+          <span class="logo">PS</span>
+          <span class="brand-name">Priyanshu Sanjel</span>
+        </div>
+        <div class="footer-socials">
+          <a class="foot-social" href="https://www.linkedin.com/in/priyanshu-sanjel-994b462b0/" target="_blank" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5ZM3 9h4v12H3zm7 0h4v1.7c.6-1 1.7-1.7 3-1.7 2.5 0 3.5 1.5 3.5 4.1V21h-4v-5.5c0-1.1-.4-2-1.5-2s-1.5.9-1.5 2V21h-4z"/>
+            </svg>
+            LinkedIn
+          </a>
+          <a class="foot-social" href="https://www.facebook.com/priyanshu.sanjel.35/" target="_blank" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M13 22v-9h3l1-4h-4V7c0-1.1.4-2 2-2h2V2h-3c-3 0-5 2-5 5v2H7v4h2v9z"/>
+            </svg>
+            Facebook
+          </a>
+          <a class="foot-social" href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
+            </svg>
+            Email
+          </a>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p class="copy">©️ <span id="year"></span> Priyanshu Sanjel. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
