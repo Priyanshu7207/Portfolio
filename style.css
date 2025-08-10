@@ -4,9 +4,9 @@
   --ink:#f2f2f2;
   --muted:#b8b8b8;
   --line:#1c1c1f;
-  --accent:#9be564;            /* neon-lime accent on black */
+  --accent:#9be564;            
   --shadow: 0 10px 30px rgba(0,0,0,.45);
-  --header-h: 64px;            /* navbar height */
+  --header-h: 64px;           
 }
 
 /* Base */
@@ -70,20 +70,18 @@ body{
 .social:hover{transform:translateY(-2px); opacity:1}
 .social svg{width:20px; height:20px; fill:currentColor}
 
-/* Square Portrait (final) */
-.hero-art{position:relative; display:grid; place-items:center}
-.portrait{
+.portrait {
   width: min(420px, 80vw);
-  aspect-ratio: 1 / 1;       /* keep it square */
-  object-fit: cover;         /* crop neatly */
-  border-radius: 18px;       /* square with soft corners */
-  border: 1px solid #1f1f20;
-  box-shadow: 0 12px 30px rgba(0,0,0,.45), inset 0 0 0 6px rgba(255,255,255,.02);
-  background:#0e0e0f;
-  outline: 6px solid rgba(255,255,255,.06); /* subtle light rim */
+  aspect-ratio: 1 / 1;       /* ensures it's square */
+  object-fit: cover;         /* fills the circle without distortion */
+  border-radius: 50%;        /* makes it a perfect circle */
+  border: 3px solid #1f1f20; /* circle border */
+  box-shadow: 0 12px 30px rgba(0,0,0,.45), 
+              inset 0 0 0 6px rgba(255,255,255,.02);
+  background: #0e0e0f;
+  outline: 6px solid rgba(255,255,255,.06);
   outline-offset: -2px;
 }
-/* Hide the old circular ring behind the portrait */
 .hero-art .avatar{ display:none; }
 
 /* Glowing background blobs */
@@ -209,16 +207,6 @@ input:focus, textarea:focus{border-color:#2a2a2a; box-shadow:0 0 0 3px rgba(155,
   .nav-links li{border-bottom:1px solid #121214}
   .nav-links a{display:block; padding:14px 4px}
 }
-
-/* Reveal Animations */
-.reveal{opacity:0; transform:translate3d(0,16px,0); transition:opacity .7s ease, transform .7s ease}
-.reveal[data-reveal="left"]{transform:translate3d(-24px,0,0)}
-.reveal[data-reveal="right"]{transform:translate3d(24px,0,0)}
-.reveal[data-reveal="up"]{transform:translate3d(0,28px,0)}
-.reveal.in{opacity:1; transform:translate3d(0,0,0)}
-.reveal[data-delay="100"]{transition-delay:.1s}
-.reveal[data-delay="200"]{transition-delay:.2s}
-.reveal[data-delay="300"]{transition-delay:.3s}
 
 /* Reduced Motion */
 @media (prefers-reduced-motion: reduce){

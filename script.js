@@ -91,15 +91,6 @@ if (toggle && links) {
   });
 }
 
-/* Scroll progress bar */
-const bar = document.querySelector('.scrollbar');
-function setScrollProgress() {
-  const h = document.body.scrollHeight - innerHeight;
-  const pct = Math.min(100, Math.max(0, (scrollY / (h || 1)) * 100));
-  if (bar) bar.style.width = pct + '%';
-}
-addEventListener('scroll', setScrollProgress);
-setScrollProgress();
 
 /* Active nav link on scroll (home only) */
 const sections = [...document.querySelectorAll('section[id]')];
